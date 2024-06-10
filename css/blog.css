@@ -1,0 +1,245 @@
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins-400';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v21-latin-regular.woff2') format('woff2');
+}
+
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins-500';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/poppins-v21-latin-500.woff2') format('woff2');
+}
+
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins-600';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/poppins-v21-latin-600.woff2') format('woff2');
+}
+
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins-700';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/poppins-v21-latin-700.woff2') format('woff2');
+}
+
+
+/* ========================================================================================================== */
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --theme: #F29F05;
+  --black: #363636;
+  --dark: #787878;
+  --light: #cfcfcf;
+  --popins-400: 'Poppins-400';
+  --popins-500: 'Poppins-500';
+  --popins-600: 'Poppins-600';
+  --popins-700: 'Poppins-700';
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* -------------------------------Slider End------------------------------- */
+
+.blog {
+  background-image: url(../assets3/asset\ 14.png);
+  object-fit: cover;
+  width: 100%;
+  /* height: auto; */
+  background-repeat: no-repeat;
+  /* position: absolute; */
+}
+
+.navbar-links li.active>a:after {
+  background: var(--theme);
+}
+
+.main_menu li.active>a:after {
+  background: var(--theme);
+}
+
+.blog-img img {
+  width: 100%;
+}
+
+.navbar-links li>a:after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0px;
+  height: 2.5px;
+  border-radius: 50px;
+  width: auto;
+  background: transparent;
+  transition: 0.4s all;
+}
+
+
+ul.crumbs li {
+  padding-right: 15px;
+}
+
+ul.crumbs li a {
+  color: var(--dark);
+  font-size: 16px;
+  font-family: var(--popins-400);
+}
+
+ul.crumbs li.two i {
+  padding-right: 8px;
+  font-size: 12px;
+  color: var(--theme);
+}
+
+.crumbs .two a {
+  color: var(--black);
+}
+
+.about-text h2 {
+  width: 65%;
+  line-height: 130%;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 48px;
+  font-family: var(--popins-700);
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0;
+  color: var(--dark);
+  width: 82%;
+  font-family: var(--popins-400);
+}
+
+.blog-img {
+  position: relative;
+  padding: 60px 0;
+}
+
+.blog-img a {
+  position: absolute;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: var(--theme);
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-img a i {
+  padding-right: 0;
+  border: 1px solid;
+  padding: 9px;
+  border-radius: 36px;
+  font-size: 22px;
+}
+
+.blog-img a.one {
+  top: 33%;
+  left: 4%;
+}
+
+.blog-img a.two {
+  top: 45%;
+  left: 8%;
+}
+
+.blog-img a.three {
+  top: 57%;
+  left: 4%;
+}
+
+/* -------------------------------Slider End------------------------------- */
+
+/* -------------------------------News Section Start------------------------------- */
+
+.blog-post-data-img img {
+  width: auto;
+  margin-right: 30px;
+}
+
+.blog-post-data-img .quickeat {
+  position: absolute;
+  top: 11%;
+  left: 4%;
+}
+
+.news-post-two{
+  margin-top: 60px;
+}
+
+.news-post-two img{
+  width: 100%;
+}
+
+.news-post-two{
+  position: relative;
+}
+
+.news-post-two .quickeat{
+  position: absolute;
+  top: 4%;
+  left: 6%;
+}
+
+.news-post-two .quickeat a{
+  color: #fff;
+  font-family: var(--popins-400);
+}
+
+.news-post-two h3{
+  color: var(--black);
+  font-size: 24px;
+  line-height: 34px;
+  font-family: var(--popins-700);
+  padding: 20px 0;
+}
+
+.news-post-two p{
+  width: 95%;
+  font-size: 16px;
+  padding-bottom: 20px;
+  font-family: var(--popins-400);
+}
+
+.news-post-two a{
+  color: var(--theme);
+  font-family: var(--popins-600);
+}
+
+.button-gap{
+  padding-top: 40px;
+}
+/* -------------------------------News Section End------------------------------- */

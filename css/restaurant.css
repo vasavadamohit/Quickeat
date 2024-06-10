@@ -1,0 +1,293 @@
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins-400';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v21-latin-regular.woff2') format('woff2');
+}
+
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins-500';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/poppins-v21-latin-500.woff2') format('woff2');
+}
+
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins-600';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/poppins-v21-latin-600.woff2') format('woff2');
+}
+
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins-700';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/poppins-v21-latin-700.woff2') format('woff2');
+}
+
+
+/* ========================================================================================================== */
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --theme: #F29F05;
+  --black: #363636;
+  --dark: #787878;
+  --light: #cfcfcf;
+  --popins-400: 'Poppins-400';
+  --popins-500: 'Poppins-500';
+  --popins-600: 'Poppins-600';
+  --popins-700: 'Poppins-700';
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* -------------------------------Slider End------------------------------- */
+
+
+.navbar-links li.active>a:after {
+  background: var(--theme);
+}
+
+.main_menu li.active>a:after {
+  background: var(--theme);
+}
+
+.nice-select-one .nice-select {
+  color: #CFCFCF;
+  border: 0;
+  box-shadow: -1px 15px 26px -4px rgba(161, 151, 151, 0.15);
+  height: 55px;
+  width: 80%;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+
+.navbar-links li>a:after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0px;
+  height: 2.5px;
+  border-radius: 50px;
+  width: auto;
+  background: transparent;
+  transition: 0.4s all;
+}
+
+ul.crumbs li {
+  padding-right: 15px;
+}
+
+ul.crumbs li a {
+  color: var(--dark);
+  font-size: 16px;
+  font-family: var(--popins-400);
+}
+
+ul.crumbs li.two i {
+  padding-right: 8px;
+  font-size: 12px;
+  color: var(--theme);
+}
+
+.crumbs .two a {
+  color: var(--black);
+}
+
+.about-text h2 {
+  width: 65%;
+  line-height: 130%;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 48px;
+  font-family: var(--popins-700);
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0;
+  color: var(--dark);
+  width: 82%;
+  font-family: var(--popins-400);
+}
+
+.about-img {
+  position: relative;
+  padding: 60px 0;
+}
+
+.about-img img {
+  border-radius: 50px;
+  width: 100%;
+  margin-left: 44px;
+}
+
+.food-photo-section.food-pic a.one {
+  left: 10%;
+  display: inline-table;
+  top: 19%;
+}
+
+.food-photo-section.food-pic a.two {
+  left: 15%;
+  display: inline-table;
+  top: 34%;
+}
+
+.food-photo-section.food-pic a.three {
+  left: 10%;
+  display: inline-table;
+  top: 49%;
+}
+
+.food-photo-section.food-pic a.four {
+  left: 15%;
+  display: inline-table;
+  top: 64%;
+}
+
+/* -------------------------------Slider End------------------------------- */
+/* -------------------------------Our Mission Start------------------------------- */
+
+.our-mission-text h2 {
+  padding-bottom: 30px;
+  margin: 0;
+  font-family: var(--popins-700);
+  line-height: 58px;
+  font-size: 47px;
+  color: var(--black);
+}
+
+.our-mission-text p {
+  color: var(--dark);
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0;
+  color: var(--dark);
+  font-family: var(--popins-400);
+
+}
+
+/* -------------------------------Our Mission End------------------------------- */
+/* -------------------------------Our Banner Start------------------------------- */
+
+.banner-pic {
+  background-image: url(../assets2/food-4.jpg);
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.banner-pic {
+  padding: 40px 0;
+}
+
+.banner-pic h4 {
+  background-color: var(--theme);
+  font-family: var(--popins-400);
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+  line-height: 20px;
+  height: 70px;
+  width: 180px;
+  align-items: center;
+  justify-content: center;
+}
+
+.chevron {
+  width: 0px;
+  height: 80px;
+  position: absolute;
+  right: 0;
+}
+
+.chevron::before,
+.chevron::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 35px;
+  left: -7px;
+  background: #ffffff;
+}
+
+.chevron-left::before {
+  transform: skew(-20deg, 0deg);
+  top: 5px;
+}
+
+.chevron-left::after {
+  transform: skew(20deg, 0deg);
+  bottom: 5px;
+}
+
+.banner-wilmington {
+  margin-left: 35px;
+}
+
+.banner-wilmington img {
+  border-radius: 15px;
+}
+
+.banner-wilmington h6 {
+  font-size: 18px;
+  margin: 0;
+  font-family: var(--popins-700);
+  padding-left: 15px;
+}
+
+.lunches {
+  padding-left: 40px;
+  padding-top: 35px
+}
+
+.lunches h2 {
+  color: var(--black);
+  font-size: 48px;
+  margin: 0;
+  font-family: var(--popins-700);
+}
+
+.lunches h3 {
+  color: var(--theme);
+  font-size: 45px;
+  margin: 0;
+  font-family: var(--popins-700);
+  padding: 15px 0 30px 0;
+}
+
+.button.button-2 i {
+  padding-left: 10px;
+}
+
+/* -------------------------------Our Banner End------------------------------- */
+
+.logos-card.restaurant-page{
+  box-shadow: -1px 15px 26px -4px rgb(161 151 151 / 15%);;
+}
