@@ -87,7 +87,7 @@
 
                 <div class="icon-btn align-items-center d-flex ">
                     <a href="" class="shopping-icon"><i class="fa-solid fa-bag-shopping"></i></a>
-                    <a href="" class="order-btn button-2">
+                    <a href="" class="order-btn order-btn-1 button-1">
                         Order Now
                     </a>
                     <div class="toggle_icon">
@@ -140,21 +140,28 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
+                    <div class="col-lg-6 z-1" data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
                         <div class="restaurant">
                             <h1>The Best restaurants in your home</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                         </div>
 
                         <div class="nice-select-one">
-                            <select name="" class="nice-select Advice" id="">
-                                <option value="">Choose a Restaurant</option>
-                                <option value="">Choose a Restaurant 1</option>
-                                <option value="">Choose a Restaurant 2</option>
-                                <option value="">Choose a Restaurant 3</option>
-                                <option value="">Choose a Restaurant 4</option>
-                            </select>
-                            <a href="" class="order-btn-1 button-1">Order Now</a>
+                            <div class="nice-select" tabindex="0">
+                                <span class="current ps-3 d-flex align-items-center">Choose a Restaurant</span>
+                                <i class="fa-solid fa-angle-down mt-1"></i>
+                                
+                                <ul class="list">
+                                    <li class="active">Choose a Restaurant</li>
+                                    <li>Choose a Restaurant 1</li>
+                                    <li>Choose a Restaurant 2</li>
+                                    <li>Choose a Restaurant 3</li>
+                                    <li>Choose a Restaurant 4</li>
+                                </ul>
+                            </div>
+                            <a href="" class="order-btn-1 button-1">
+                                Order Now
+                            </a>
                         </div>
                     </div>
 
@@ -265,7 +272,7 @@
                     <div class="logos-card">
                         <img src="assets/best 1.jpeg" alt="">
                         <div class="cafa">
-                            <h4><a href="">Kennington Lane Cafe</a></h4>
+                            <h4>Kennington Lane Cafe</a></h4>
                             <div>
                                 <i class="fa fa-solid fa-star"></i>
                                 <i class="fa fa-solid fa-star"></i>
@@ -337,7 +344,7 @@
             </div>
 
             <div class="button-gap text-center">
-                <a href="" class="button button-2 ">SEE ALL
+                <a href="" class="button button-2">SEE ALL
                     <i class="fa-solid fa-arrow-right ms-1"></i>
                 </a>
             </div>
@@ -732,11 +739,11 @@
                             <p>1717 Harrison St, San Francisco, CA 94103,
                                 United States</p>
                         </div>
-                        <a href="">
+                        <a href="" class="footer-det-icon">
                             <i class="fa-solid fa-envelope mail-clr"></i>
                             quickeat@mail.net
                         </a>
-                        <a href="">
+                        <a href="" class="footer-det-icon">
                             <i class="fa-solid fa-phone mail-clr"></i>
                             +1 425 326 16 27
                         </a>
@@ -765,8 +772,6 @@
             </div>
         </div>
     </section>
-    </div>
-
 
     <!---------------------------------------Footer Section End--------------------------------------->
 
@@ -784,7 +789,7 @@
 
     <script>
         // loader Js Start
-        
+
         window.onload = function () {
             setTimeout(function () {
                 $('#load').fadeToggle('d-none');
@@ -810,6 +815,20 @@
 
             $('.mo_main_menu > li > a').click(function () {
                 $(this).next('.mo_sub_menu').slideToggle()
+            })
+
+            // -----------------------DropDown--------------
+
+            $('.nice-select').click(function () {
+                $('.list').toggleClass('open')
+                $(this).find('i').toggleClass('rotate_icon')
+            })
+
+            $('.list > li').click(function(){
+                $('.list > li').removeClass('active');
+                var v = $(this).text();
+                $('.nice-select .current').text(v);
+                $(this).addClass('active');
             })
 
         });

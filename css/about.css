@@ -436,7 +436,6 @@ ul.paragraph li h5 {
   color: var(--light);
   display: flex;
   align-items: center;
-  padding-right: 14px;
   justify-content: center;
   color: var(--dark);
   transition: .3s;
